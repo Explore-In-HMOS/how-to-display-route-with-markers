@@ -1,5 +1,4 @@
-import { navi } from '@kit.MapKit';
-import type { mapCommon } from '@kit.MapKit';
+import {navi, mapCommon } from '@kit.MapKit';
 
 export class NavigationService {
   static async getDrivingRouteTo(currentLocation: mapCommon.LatLng,destination: mapCommon.LatLng):
