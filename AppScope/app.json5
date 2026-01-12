@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.hmosdemos.routeCreate",
+    "bundleName":"com.hmosdemos.wearable.how_to_display_a_route_with_markers_on_a_map",
     "vendor": "hmosdemos",
     "versionCode": 1000000,
     "versionName": "1.0.0",

@@ -1,7 +1,7 @@
 import {navi, mapCommon } from '@kit.MapKit';
 
 export class NavigationService {
-  static async getDrivingRouteTo(currentLocation: mapCommon.LatLng,destination: mapCommon.LatLng):
+  static async getDrivingRouteTo(currentLocation: mapCommon.LatLng, destination: mapCommon.LatLng):
     Promise<navi.RouteResult | null> {
     try {
 

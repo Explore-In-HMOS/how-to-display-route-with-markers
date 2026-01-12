@@ -61,4 +61,4 @@ entry/src/main/ets/
 
 
 # License
-Map And Navigation App is distributed under the terms of the MIT License. See the [LICENSE](/LICENSE) for more information.
+How to display a route with markers on a map app is distributed under the terms of the MIT License. See the [LICENSE](/LICENSE) for more information.

@@ -11,9 +11,6 @@ export struct HomePage {
     position: { target: { latitude: 38.447967, longitude: 27.179380 }, zoom: 13 }
   };
 
-  @State originLatLng? : String = ''
-  @State destinationLatLng? : String = ''
-
   @State currentLocation: mapCommon.MarkerOptions = {
     position: { latitude: 38.447967, longitude: 27.179380},
     title: 'Mistral Izmir',
@@ -32,10 +29,6 @@ export struct HomePage {
     alpha: 1
   };
 
-
-  async aboutToAppear() {
-  }
-
   build() {
     Column() {
       Button('Create Route')
@@ -43,7 +36,7 @@ export struct HomePage {
         .onClick( async () => {
 
           const routeResult = await NavigationService
-            .getDrivingRouteTo(this.currentLocation.position,this.destinationLocation.position)
+            .getDrivingRouteTo(this.currentLocation.position, this.destinationLocation.position)
 
           if (routeResult && routeResult.routes?.length > 0) {
             const route = routeResult.routes[0];
